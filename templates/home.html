@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - My Personal Website{% endblock %}
+
+{% block content %}
+<div class="hero-section py-5">
+    <h1 class="mega-title">Hello, my name is Zaydip</h1>
+    <p class="lead-intro">I am a Web Developer who is currently based in Pakistan.</p>
+    
+    <div class="role-tags mt-4">
+        <span class="role-tag">Web Developer</span>
+        <span class="role-tag">Python Expert</span>
+        <span class="role-tag">Student</span>
+    </div>
+</div>
+
+<div class="skills-section mt-5">
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="skill-card">
+                <h2>Python Developer</h2>
+                <p>Skilled in Python for building efficient backend solutions, automation, and data-driven applications using frameworks like Django.</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="skill-card">
+                <h2>JavaScript & TypeScript</h2>
+                <p>Experienced in JavaScript and TypeScript for creating dynamic and scalable applications, ensuring strong front-end and back-end performance.</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="skill-card">
+                <h2>React Developer</h2>
+                <p>Proficient in React for building interactive, responsive, and modern user interfaces, with a focus on performance and usability.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="projects-section mt-5">
+    <h2 class="section-title">Selected Projects</h2>
+    <p class="section-subtitle">Take a look below at some of my featured personal projects from the past few years.</p>
+    
+    <div class="row mt-4">
+        <div class="col-md-6 mb-4">
+            <div class="project-card">
+                <h3>Personal Website</h3>
+                <p>A modern, responsive personal portfolio website built with Django</p>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="project-card">
+                <h3>Movie Recommender</h3>
+                <p>AI-powered movie recommendation system using machine learning</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="technologies-section mt-5">
+    <h2 class="section-title">Technologies</h2>
+    <p class="section-subtitle">Review the technologies that I have experience with</p>
+    
+    <div class="tech-tags mt-4">
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">JavaScript</span>
+        <span class="tech-tag">Django</span>
+        <span class="tech-tag">React</span>
+        <span class="tech-tag">Git</span>
+    </div>
+</div>
+
+<div class="contact-section text-center mt-5 py-5">
+    <h2 class="section-title">Interested in working together?</h2>
+    <a href="{% url 'contact' %}" class="btn btn-primary btn-lg mt-3">Send Me a Message</a>
+</div>
+{% endblock %} 
